@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link class='alert' rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <div>
+	    <div class="main">
+		    <h1>❄️🔥 Tic Tac Toe 🔥❄️</h1>
+
+            <!-- Instruction -->
+		    <p id="my-element" class="ins"><strong>TAP in box to START</strong><br></p><br>
+
+            <p><a class="name1">First Player</a> start first as <b>(🔥)</b><br>& <a class="name2">Second Player</a> start second as <b>(❄️)</b></p>
+
+            <p id="print">Tracking Move</p>
+
+            <!-- PlayArea -->
+            <div class="play-area">
+                <div><input id="b1" class="box" onclick=
+			"myfunc_1(); myboxes()" readonly> </div>
+
+                <div><input id="b2" class="box" onclick=
+			"myfunc_2(); myboxes()" readonly></div>
+
+                <div><input id="b3" class="box" onclick=
+			"myfunc_3(); myboxes()" readonly></div>
+
+                <div><input id="b4" class="box" onclick=
+			"myfunc_4(); myboxes()" readonly></div>
+			
+                <div><input id="b5" class="box" onclick=
+			"myfunc_5(); myboxes()" readonly></div>
+
+                <div><input id="b6" class="box" onclick=
+			"myfunc_6(); myboxes()" readonly></div>
+
+                <div><input id="b7" class="box" onclick=
+			"myfunc_7(); myboxes()" readonly></div>
+
+                <div><input id="b8" class="box" onclick=
+			"myfunc_8(); myboxes()" readonly></div>
+
+                <div><input id="b9" class="box" onclick=
+			"myfunc_9(); myboxes()" readonly></div>
+
+                <div id="strike" class="strike"></div>
+        </div><br>      
+
+        <!-- ScoreBoard -->
+        <div>
+            <table class="scoreBoard">
+                <tr>
+                    <th class="score1">PLAYER 1</th>
+                    <th>DRAW</th>
+                    <th class="score2">PLAYER 2</th>
+                </tr>
+                <tr>
+                    <th id="s1">0</th>
+                    <th id="draw">0</th>
+                    <th id="s2">0</th>
+                </tr>
+            </table>
+        </div><br><hr>
+
+        <!-- Button Restart & Reset -->
+        <div>
+        <button class="restart" onclick="myfunc_0()">PLAY AGAIN</button>
+        <br><br>
+        <button class="reset" onclick="myfunc_11()">⚠ RESET GAME ⚠</button>
+        </div>
+        
+        <script class='alert' src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+
+        <!-- Navigation Setting -->
+        <input type="checkbox" id="ham-menu">
+        <label for="ham-menu">
+          <div class="hide-des">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+          </div>
+        </label>
+        
+        <div class="full-page-green"></div>
+        <div class="ham-menu">
+          <ul class="centre-text bold-text"><br><br>
+            <li>Home</li>
+            <li>Avatars</li>
+            <li>Board Size</li>
+            <li>High Score</li>
+
+            <!-- Change Player Name -->
+            <br><br><p>"Click the button below to change the PlayerName"</p>
+            <button class='name' onclick="namePlayer1()">Player 1</button><br>
+            <button class='name' onclick="namePlayer2()">Player 2</button><br><br><br>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <a href='https://www.facebook.com/' target="_blank"><img src="media/social-icon-facebook.png" alt="fb"></a>
+                <a href='https://twitter.com/home' target="_blank"><img src="media/social-icon-twitter.png" alt="twitter"></a>
+                <a href='https://www.youtube.com/' target="_blank"><img src="media/social-icon-pinterest.png" alt="pinterest"></a><br>
+                <a>Ⓒ Copyright AlifSoftware</a>
+            </footer>
+          </ul>
+        </div>
+    </div>
+</body>
+</html>
