@@ -23,5 +23,5 @@ pro: love the implementation of 2 windows hide and appear.
 con: it would be best if can merge all coding into one js, so it easy to monitor, reduce contradictory and confusing.
 
 <!-- /* Hadri */ -->
-pro:
-con:
+pro: good implementation of tictacdie. love the first window warning
+con: can be improve at indentation and arrangement of the js
